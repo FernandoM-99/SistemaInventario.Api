@@ -13,9 +13,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:3000")
+                          policy.WithOrigins("http://localhost:3000",        // Para tu React local
+                                             "http://www.keystock.somee.com") // <--- ¡AÑADIDO PARA SOMEE.COM!
                                 .AllowAnyHeader()
-                                .AllowAnyMethod();
+                                .AllowAnyMethod()
+                                .AllowCredentials(); // Agrega esto si planeas usar JWT, cookies, etc.
                       });
 });
 
@@ -50,9 +52,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 // Usar CORS (debe ir ANTES de MapControllers)
 app.UseCors(MyAllowSpecificOrigins);
 
 app.MapControllers();
+
+app.MapFallbackToFile("index.html");
 
 app.Run();

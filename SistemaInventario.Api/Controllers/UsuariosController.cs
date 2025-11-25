@@ -116,14 +116,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // PUT: api/Usuarios/5
-        // Para actualizar un usuario existente
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, UsuarioCreacionDto usuarioDto)
+        public async Task<IActionResult> PutUsuario(int id, UsuarioEdicionDto usuarioDto) // <--- ¡AQUÍ ESTÁ LA CLAVE!
         {
             var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario == null)
             {
-                return NotFound(); // 404 si no encuentra el usuario
+                return NotFound();
             }
 
             // 1. Validar si el RoleID existe
@@ -132,19 +131,19 @@ namespace SistemaInventario.Api.Controllers
                 return BadRequest($"El RoleID '{usuarioDto.RoleID}' no existe.");
             }
 
-            // 2. Opcional: Validar si el Email se está cambiando a uno ya existente por otro usuario
+            // 2. Validar email duplicado
             if (usuario.Email != usuarioDto.Email && await _context.Usuarios.AnyAsync(u => u.Email == usuarioDto.Email && u.UsuarioID != id))
             {
                 return Conflict($"Ya existe otro usuario con el correo electrónico '{usuarioDto.Email}'.");
             }
 
-            // 3. Actualizar propiedades del modelo
+            // 3. Actualizar propiedades
             usuario.RoleID = usuarioDto.RoleID;
             usuario.NombreCompleto = usuarioDto.NombreCompleto;
             usuario.Email = usuarioDto.Email;
             usuario.Activo = usuarioDto.Activo;
 
-            // Actualizar contraseña solo si se proporciona una nueva (no vacía)
+            // 4. Actualizar contraseña SOLO si el DTO trae texto (no es nulo ni vacío)
             if (!string.IsNullOrEmpty(usuarioDto.Password))
             {
                 usuario.PasswordHash = HashPassword(usuarioDto.Password);
@@ -166,7 +165,7 @@ namespace SistemaInventario.Api.Controllers
                 }
             }
 
-            return NoContent(); // 204 No Content
+            return NoContent(); // Esto devuelve un 204 (Cuerpo vacío, pero Éxito)
         }
 
         // DELETE: api/Usuarios/5

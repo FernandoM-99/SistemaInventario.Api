@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
-using SistemaInventario.Api.DTOs; // Importar DTOs
+using SistemaInventario.Api.DTOs;
 using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers

@@ -1,4 +1,8 @@
 ﻿// Controllers/ProductosController.cs
+/// <summary>
+/// Proporciona servicios para la gestión del catálogo de productos.
+/// Incluye operaciones para la creación, consulta, actualización y eliminación de artículos e inventario.
+/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -19,6 +23,12 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Productos
+        /// <summary>
+        /// Obtiene la lista completa de productos registrados en el sistema.
+        /// </summary>
+        /// <returns>Una lista de objetos ProductoDto.</returns>
+        /// <response code="200">Retorna la lista de productos con éxito.</response>
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoDto>>> GetProductos()
         {

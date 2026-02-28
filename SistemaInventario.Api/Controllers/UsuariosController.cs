@@ -1,11 +1,15 @@
 ﻿// Controllers/UsuariosController.cs (COMPLETO CON CRUD)
+/// <summary>
+/// Gestiona la administración de cuentas de usuario del sistema.
+/// Permite el control de perfiles, asignación de roles y estado de activación de los empleados.
+/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
 using SistemaInventario.Api.DTOs;
 using SistemaInventario.Api.Models;
-using System.Security.Cryptography; // Para generar hash simple
-using System.Text; // Para codificación de texto
+using System.Security.Cryptography;
+using System.Text;
 
 namespace SistemaInventario.Api.Controllers
 {

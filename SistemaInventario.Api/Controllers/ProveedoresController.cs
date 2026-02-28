@@ -1,4 +1,8 @@
 ﻿// Controllers/ProveedoresController.cs
+/// <summary>
+/// Módulo encargado de la gestión de la base de datos de proveedores.
+/// Almacena información de contacto y relaciones comerciales con las entidades de suministro.
+/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;

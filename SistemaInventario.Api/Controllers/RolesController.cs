@@ -1,8 +1,12 @@
 ﻿// Controllers/RolesController.cs (COMPLETO CON CRUD)
+/// <summary>
+/// Gestiona la administración de  Roles del sistema.
+/// Permite el control de roles (Creacion y Modificacion).
+/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
-using SistemaInventario.Api.Models; // Aquí usamos el modelo directamente
+using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers
 {

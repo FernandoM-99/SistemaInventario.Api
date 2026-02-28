@@ -1,4 +1,8 @@
 ﻿// Controllers/MovimientosInventarioController.cs
+/// <summary>
+/// Administra el registro de entradas, salidas y ajustes de stock.
+/// Garantiza la integridad de los datos mediante el uso de transacciones asíncronas para actualizar el stock.
+/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;

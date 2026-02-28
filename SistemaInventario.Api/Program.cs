@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
+using System.Reflection;
 
 // Definición de la política de CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -19,6 +20,21 @@ builder.Services.AddCors(options =>
                                 .AllowAnyMethod()
                                 .AllowCredentials(); // Agrega esto si planeas usar JWT, cookies, etc.
                       });
+});
+
+builder.Services.AddSwaggerGen(options =>
+{
+    // Esto configura el título y versión en la UI de Swagger
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "KeyStock API",
+        Version = "v1",
+        Description = "Sistema de Gestión de Inventarios"
+    });
+
+    // LEER COMENTARIOS XML
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
 // --- 2. Cadena de Conexión y DbContext ---

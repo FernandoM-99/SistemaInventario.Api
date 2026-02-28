@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/// <summary>
+/// Gestiona los procesos de autenticación y acceso al sistema.
+/// Permite el inicio de sesión de usuarios mediante la validación de credenciales hasheadas.
+/// </summary>
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
 using SistemaInventario.Api.Dtos;

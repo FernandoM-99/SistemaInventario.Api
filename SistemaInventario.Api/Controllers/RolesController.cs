@@ -1,8 +1,4 @@
 ﻿// Controllers/RolesController.cs (COMPLETO CON CRUD)
-/// <summary>
-/// Gestiona la administración de  Roles del sistema.
-/// Permite el control de roles (Creacion y Modificacion).
-/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -10,6 +6,10 @@ using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers
 {
+    /// <summary>
+    /// Gestiona la administración de  Roles del sistema.
+    /// Permite el control de roles (Creacion y Modificacion).
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class RolesController : ControllerBase
@@ -21,8 +21,12 @@ namespace SistemaInventario.Api.Controllers
             _context = context;
         }
 
-        // --- MÉTODOS GET ---
         // GET: api/Roles
+        /// <summary>
+        /// Obtiene la lista completa de roles definidos en el sistema.
+        /// </summary>
+        /// <returns>Una colección de objetos Rol.</returns>
+        /// <response code="200">Lista de roles recuperada con éxito.</response>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Rol>>> GetRoles()
         {
@@ -31,6 +35,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Roles/1
+        /// <summary>
+        /// Obtiene la información de un rol específico mediante su ID.
+        /// </summary>
+        /// <param name="id">ID único del rol.</param>
+        /// <returns>El objeto Rol solicitado.</returns>
+        /// <response code="200">Rol encontrado.</response>
+        /// <response code="404">No se encontró el rol con el ID proporcionado.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<Rol>> GetRol(int id)
         {
@@ -43,10 +54,12 @@ namespace SistemaInventario.Api.Controllers
             return Ok(rol);
         }
 
-        // --- MÉTODOS CRUD ---
-
-        // POST: api/Roles
         // Para crear un nuevo rol
+        /// <summary>
+        /// Registra un nuevo rol de usuario.
+        /// </summary>
+        /// <response code="201">Rol creado con éxito.</response>
+        /// <response code="409">El nombre del rol ya existe.</response>
         [HttpPost]
         public async Task<ActionResult<Rol>> PostRol(Rol rol)
         {
@@ -63,7 +76,11 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // PUT: api/Roles/1
-        // Para actualizar un rol existente
+        /// <summary>
+        /// Registra un nuevo rol de usuario.
+        /// </summary>
+        /// <response code="201">Rol creado con éxito.</response>
+        /// <response code="409">El nombre del rol ya existe.</response>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutRol(int id, Rol rol)
         {
@@ -100,7 +117,11 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // DELETE: api/Roles/1
-        // Para eliminar un rol
+        /// <summary>
+        /// Elimina un rol si no tiene usuarios asociados.
+        /// </summary>
+        /// <response code="204">Rol eliminado.</response>
+        /// <response code="400">No se puede eliminar porque tiene usuarios vinculados.</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRol(int id)
         {

@@ -1,8 +1,4 @@
 ﻿// Controllers/ProveedoresController.cs
-/// <summary>
-/// Módulo encargado de la gestión de la base de datos de proveedores.
-/// Almacena información de contacto y relaciones comerciales con las entidades de suministro.
-/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -11,6 +7,10 @@ using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers
 {
+    /// <summary>
+    /// Módulo encargado de la gestión de la base de datos de proveedores.
+    /// Almacena información de contacto y relaciones comerciales con las entidades de suministro.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ProveedoresController : ControllerBase
@@ -22,8 +22,12 @@ namespace SistemaInventario.Api.Controllers
             _context = context;
         }
 
-        // --- MÉTODOS GET ---
         // GET: api/Proveedores
+        /// <summary>
+        /// Obtiene el catálogo de proveedores registrados en el sistema.
+        /// </summary>
+        /// <returns>Lista de objetos ProveedorDto.</returns>
+        /// <response code="200">Consulta exitosa.</response>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProveedorDto>>> GetProveedores()
         {
@@ -41,6 +45,12 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Proveedores/1
+        /// <summary>
+        /// Obtiene los datos detallados de un proveedor por su ID.
+        /// </summary>
+        /// <param name="id">ID del proveedor.</param>
+        /// <response code="200">Proveedor encontrado.</response>
+        /// <response code="404">Proveedor no encontrado.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<ProveedorDto>> GetProveedor(int id)
         {
@@ -62,9 +72,15 @@ namespace SistemaInventario.Api.Controllers
             return Ok(proveedorDto);
         }
 
-        // --- MÉTODOS CRUD ---
 
         // POST: api/Proveedores
+        /// <summary>
+        /// Registra un nuevo proveedor en la base de datos de KeyStock.
+        /// </summary>
+        /// <param name="proveedorDto">Información de contacto y empresa del proveedor.</param>
+        /// <returns>El proveedor recién creado.</returns>
+        /// <response code="201">Registro exitoso.</response>
+        /// <response code="409">Ya existe una empresa registrada con ese nombre.</response>
         [HttpPost]
         public async Task<ActionResult<ProveedorDto>> PostProveedor(ProveedorCreacionDto proveedorDto)
         {
@@ -98,6 +114,14 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // PUT: api/Proveedores/1
+        /// <summary>
+        /// Actualiza la información de contacto o el nombre de un proveedor existente.
+        /// </summary>
+        /// <param name="id">ID del proveedor a modificar.</param>
+        /// <param name="proveedorDto">Nuevos datos del proveedor.</param>
+        /// <response code="204">Actualización realizada correctamente.</response>
+        /// <response code="404">El proveedor no existe.</response>
+        /// <response code="409">El nuevo nombre de empresa ya está ocupado por otro proveedor.</response>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProveedor(int id, ProveedorCreacionDto proveedorDto)
         {
@@ -138,6 +162,14 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // DELETE: api/Proveedores/1
+        /// <summary>
+        /// Elimina un proveedor del sistema.
+        /// </summary>
+        /// <remarks>
+        /// La operación fallará si el proveedor tiene productos o movimientos de inventario asociados.
+        /// </remarks>
+        /// <response code="204">Eliminación exitosa.</response>
+        /// <response code="400">No se puede eliminar debido a dependencias en el inventario.</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProveedor(int id)
         {

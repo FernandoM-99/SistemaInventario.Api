@@ -28,7 +28,7 @@ namespace SistemaInventario.Api.Controllers
         /// </summary>
         /// <returns>Una lista de objetos ProductoDto.</returns>
         /// <response code="200">Retorna la lista de productos con éxito.</response>
-
+        /// <response code="404">No se encontró ningun producto.</response>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoDto>>> GetProductos()
         {
@@ -46,6 +46,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Productos/5 
+        /// <summary>
+        /// Obtiene un producto específico mediante su ID único.
+        /// </summary>
+        /// <param name="id">ID numérico del producto.</param>
+        /// <returns>Un objeto ProductoDto con el detalle del producto.</returns>
+        /// <response code="200">Producto encontrado con éxito.</response>
+        /// <response code="404">No se encontró ningún producto con el ID proporcionado.</response>
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ProductoDto>> GetProducto(int id)
         {
@@ -69,6 +76,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Productos/buscar/LAP-001
+        /// <summary>
+        /// Busca un producto utilizando su código de referencia (SKU).
+        /// </summary>
+        /// <param name="sku">Código SKU del producto.</param>
+        /// <returns>Un objeto ProductoDto.</returns>
+        /// <response code="200">Producto encontrado.</response>
+        /// <response code="404">No existe un producto con ese SKU.</response>
         [HttpGet("buscar/{sku}")]
         public async Task<ActionResult<ProductoDto>> GetProductoPorSku(string sku)
         {
@@ -93,7 +107,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // POST: api/Productos
-        // Para crear un nuevo producto
+        /// <summary>
+        /// Registra un nuevo producto en el catálogo.
+        /// </summary>
+        /// <param name="productoDto">Datos del nuevo producto.</param>
+        /// <returns>El producto recién creado.</returns>
+        /// <response code="201">Producto creado exitosamente.</response>
+        /// <response code="409">El SKU ya está registrado por otro producto.</response>
         [HttpPost]
         public async Task<ActionResult<ProductoDto>> PostProducto(ProductoCreacionDto productoDto)
         {
@@ -129,7 +149,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // PUT: api/Productos/5
-        // Para actualizar un producto existente
+        /// <summary>
+        /// Actualiza la información de un producto existente.
+        /// </summary>
+        /// <param name="id">ID del producto a modificar.</param>
+        /// <param name="productoDto">Nuevos datos del producto.</param>
+        /// <response code="204">Actualización exitosa.</response>
+        /// <response code="404">Producto no encontrado.</response>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProducto(int id, ProductoCreacionDto productoDto)
         {
@@ -171,7 +197,12 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // DELETE: api/Productos/5
-        // Para eliminar un producto
+        /// <summary>
+        /// Elimina un producto del sistema de forma permanente.
+        /// </summary>
+        /// <param name="id">ID del producto a borrar.</param>
+        /// <response code="204">Eliminación exitosa.</response>
+        /// <response code="404">Producto no encontrado.</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProducto(int id)
         {

@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
 using SistemaInventario.Api.Dtos;
-using SistemaInventario.Api.Models; // Asumiendo que tu modelo Usuario está aquí
 
 namespace SistemaInventario.Api.Controllers
 {
@@ -22,6 +21,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // POST: api/Auth/login
+        /// <summary>
+        /// Valida las credenciales de un usuario para permitir el acceso al sistema.
+        /// </summary>
+        /// <param name="loginDto">Objeto que contiene Email y Password.</param>
+        /// <returns>Respuesta de autenticación con datos del usuario y rol.</returns>
+        /// <response code="200">Login exitoso.</response>
+        /// <response code="401">Credenciales inválidas o cuenta inactiva.</response>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
@@ -30,31 +36,25 @@ namespace SistemaInventario.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            // 1. Buscar el usuario por email
             var usuario = await _context.Usuarios
                                         .Include(u => u.Rol) // Para obtener el nombre del rol en la respuesta
                                         .SingleOrDefaultAsync(u => u.Email == loginDto.Email);
-
-            // 2. Validar si el usuario existe
             if (usuario == null)
             {
                 return Unauthorized("Credenciales incorrectas. Intenta de nuevo.");
             }
 
-            // 3. Validar si el usuario está activo
             if (!usuario.Activo)
             {
                 return Unauthorized("Tu cuenta está inactiva. Contacta al administrador.");
             }
 
-            // 4. Verificar la contraseña (¡USAR EL MISMO HASH DE UsuariosController!)
             var hashedPassword = HashPassword(loginDto.Password);
             if (usuario.PasswordHash != hashedPassword)
             {
                 return Unauthorized("Credenciales incorrectas. Intenta de nuevo.");
             }
 
-            // 5. Si todo es correcto, crear la respuesta de autenticación
             var authResponse = new AuthResponseDto
             {
                 UsuarioID = usuario.UsuarioID,
@@ -68,7 +68,6 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // Función para hashear la contraseña
-        // ¡DEBE SER IDÉNTICA A LA DE UsuariosController!
         private string HashPassword(string password)
         {
             using (var sha256 = System.Security.Cryptography.SHA256.Create())

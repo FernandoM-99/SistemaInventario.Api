@@ -1,8 +1,4 @@
 ﻿// Controllers/MovimientosInventarioController.cs
-/// <summary>
-/// Administra el registro de entradas, salidas y ajustes de stock.
-/// Garantiza la integridad de los datos mediante el uso de transacciones asíncronas para actualizar el stock.
-/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -11,6 +7,9 @@ using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers
 {
+    /// <summary>
+    /// Obtiene el historial completo de movimientos de inventario (Entradas/Salidas).
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class MovimientosInventarioController : ControllerBase
@@ -22,8 +21,16 @@ namespace SistemaInventario.Api.Controllers
             _context = context;
         }
 
-        // --- MÉTODO GET ---
         // GET: api/MovimientosInventario
+        /// <summary>
+        /// Obtiene el historial completo de movimientos de inventario registrados.
+        /// </summary>
+        /// <remarks>
+        /// Incluye información detallada del producto, el usuario que realizó la acción y el proveedor asociado.
+        /// Los resultados se ordenan de forma descendente por fecha (más recientes primero).
+        /// </remarks>
+        /// <returns>Una lista de objetos MovimientoInventarioDto.</returns>
+        /// <response code="200">Consulta exitosa del historial.</response>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MovimientoInventarioDto>>> GetMovimientosInventario()
         {
@@ -54,6 +61,13 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/MovimientosInventario/5
+        /// <summary>
+        /// Obtiene el detalle de un movimiento de inventario específico mediante su ID.
+        /// </summary>
+        /// <param name="id">ID único del movimiento.</param>
+        /// <returns>Objeto con el detalle del movimiento solicitado.</returns>
+        /// <response code="200">Movimiento encontrado.</response>
+        /// <response code="404">No existe un movimiento con el ID proporcionado.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<MovimientoInventarioDto>> GetMovimientoInventario(int id)
         {
@@ -87,8 +101,16 @@ namespace SistemaInventario.Api.Controllers
             return Ok(movimiento);
         }
 
-        // --- MÉTODO POST ---
         // POST: api/MovimientosInventario
+        /// <summary>
+        /// Registra una nueva operación de inventario y actualiza automáticamente el stock del producto.
+        /// </summary>
+        /// <remarks>
+        /// Utiliza una transacción de base de datos para asegurar que el registro y el stock se actualicen simultáneamente.
+        /// </remarks>
+        /// <param name="movimientoDto">Detalle del movimiento.</param>
+        /// <response code="201">Movimiento registrado y stock actualizado.</response>
+        /// <response code="400">Datos inválidos o stock insuficiente para salidas.</response>
         [HttpPost]
         public async Task<ActionResult<MovimientoInventarioDto>> PostMovimientoInventario(MovimientoCreacionDto movimientoDto)
         {

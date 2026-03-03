@@ -1,8 +1,4 @@
 ﻿// Controllers/UsuariosController.cs (COMPLETO CON CRUD)
-/// <summary>
-/// Gestiona la administración de cuentas de usuario del sistema.
-/// Permite el control de perfiles, asignación de roles y estado de activación de los empleados.
-/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -13,6 +9,10 @@ using System.Text;
 
 namespace SistemaInventario.Api.Controllers
 {
+    /// <summary>
+    /// Gestiona la administración de cuentas de usuario del sistema.
+    /// Permite el control de perfiles, asignación de roles y estado de activación de los empleados.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
@@ -23,9 +23,12 @@ namespace SistemaInventario.Api.Controllers
         {
             _context = context;
         }
-
-        // --- MÉTODOS GET ---
         // GET: api/Usuarios
+        /// <summary>
+        /// Obtiene la lista de todos los usuarios registrados, incluyendo su rol asignado.
+        /// </summary>
+        /// <returns>Lista de objetos UsuarioDto.</returns>
+        /// <response code="200">Lista de usuarios obtenida con éxito.</response>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UsuarioDto>>> GetUsuarios()
         {
@@ -45,6 +48,12 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // GET: api/Usuarios/1
+        /// <summary>
+        /// Elimina permanentemente un usuario del sistema.
+        /// </summary>
+        /// <param name="id">ID del usuario a eliminar.</param>
+        /// <response code="204">Usuario eliminado exitosamente.</response>
+        /// <response code="404">El usuario no existe.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<UsuarioDto>> GetUsuario(int id)
         {
@@ -69,10 +78,13 @@ namespace SistemaInventario.Api.Controllers
             return Ok(usuarioDto);
         }
 
-        // --- MÉTODOS CRUD ---
 
         // POST: api/Usuarios
-        // Para crear un nuevo usuario
+        /// <summary>
+        /// Crea un nuevo usuario en el sistema con contraseña hasheada en SHA256.
+        /// </summary>
+        /// <response code="201">Usuario creado con éxito.</response>
+        /// <response code="409">El correo electrónico ya está en uso.</response>
         [HttpPost]
         public async Task<ActionResult<UsuarioDto>> PostUsuario(UsuarioCreacionDto usuarioDto)
         {
@@ -120,6 +132,9 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // PUT: api/Usuarios/5
+        /// <summary>
+        /// Modifica los datos de un usuario. Permite actualizar la contraseña de forma opcional.
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, UsuarioEdicionDto usuarioDto) // <--- ¡AQUÍ ESTÁ LA CLAVE!
         {
@@ -173,7 +188,12 @@ namespace SistemaInventario.Api.Controllers
         }
 
         // DELETE: api/Usuarios/5
-        // Para eliminar un usuario
+        /// <summary>
+        /// Obtiene la información detallada de un usuario específico por su ID.
+        /// </summary>
+        /// <param name="id">ID del usuario.</param>
+        /// <response code="200">Usuario encontrado.</response>
+        /// <response code="404">Usuario no encontrado.</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {

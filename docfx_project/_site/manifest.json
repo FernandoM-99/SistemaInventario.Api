@@ -1,0 +1,301 @@
+{
+  "source_base_path": "C:/Proyectos/SistemaInventario.Api/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/App/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/App/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/App/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/App/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/AuthContext/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/AuthContext/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/AuthContext/functions/AuthProvider.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/AuthContext/functions/AuthProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/AuthContext/functions/useAuth.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/AuthContext/functions/useAuth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/Navbar/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/Navbar/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/Navbar/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/Navbar/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/ProtectedRoute/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/ProtectedRoute/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/ProtectedRoute/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/ProtectedRoute/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/Sidebar/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/Sidebar/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/components/Sidebar/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/components/Sidebar/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/index/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/index/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/modules.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/modules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/Dashboard/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/Dashboard/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/Dashboard/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/Dashboard/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/Login/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/Login/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/Login/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/Login/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/MovimientosPage/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/MovimientosPage/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/MovimientosPage/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/MovimientosPage/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/ProductosPage/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/ProductosPage/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/ProductosPage/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/ProductosPage/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/ProveedoresPage/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/ProveedoresPage/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/ProveedoresPage/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/ProveedoresPage/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/RolesPage/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/RolesPage/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/RolesPage/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/RolesPage/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/UsuariosPage/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/UsuariosPage/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/pages/UsuariosPage/functions/default.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/pages/UsuariosPage/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

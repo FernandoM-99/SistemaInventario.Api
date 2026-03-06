@@ -18,13 +18,12 @@ builder.Services.AddCors(options =>
                                              "http://www.keystock.somee.com") // <--- ¡AÑADIDO PARA SOMEE.COM!
                                 .AllowAnyHeader()
                                 .AllowAnyMethod()
-                                .AllowCredentials(); // Agrega esto si planeas usar JWT, cookies, etc.
+                                .AllowCredentials();
                       });
 });
 
 builder.Services.AddSwaggerGen(options =>
 {
-    // Esto configura el título y versión en la UI de Swagger
     options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
         Title = "KeyStock API",

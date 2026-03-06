@@ -79,6 +79,7 @@ namespace SistemaInventario.Api.Controllers
         }
 
 
+
         // POST: api/Usuarios
         /// <summary>
         /// Crea un nuevo usuario en el sistema con contraseña hasheada en SHA256.

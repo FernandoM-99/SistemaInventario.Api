@@ -1,0 +1,36 @@
+name: CI/CD Documentation
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install Docfx
+        run: dotnet tool update -g docfx
+
+      - name: Generate Frontend Docs
+        run: |
+          cd sistema-inventario-frontend
+          npm install --legacy-peer-deps
+          npx typedoc
+
+      - name: Build Docfx Site
+        run: docfx docfx_project/docfx.json
+
+      - name: Publish to GitHub Pages
+        uses: actions/deploy-pages@v4

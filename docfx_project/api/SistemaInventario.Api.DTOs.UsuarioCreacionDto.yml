@@ -1,0 +1,643 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  id: UsuarioCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  children:
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+  langs:
+  - csharp
+  - vb
+  name: UsuarioCreacionDto
+  nameWithType: UsuarioCreacionDto
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  type: Class
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: UsuarioCreacionDto
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 5
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: public class UsuarioCreacionDto
+    content.vb: Public Class UsuarioCreacionDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+  commentId: P:SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+  id: RoleID
+  parent: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: RoleID
+  nameWithType: UsuarioCreacionDto.RoleID
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: RoleID
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 7
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "El ID del rol es obligatorio.")]
+
+      [Range(1, 2147483647, ErrorMessage = "El ID del rol debe ser un número positivo.")]
+
+      public int RoleID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required(ErrorMessage:="El ID del rol es obligatorio.")>
+
+      <Range(1, 2147483647, ErrorMessage:="El ID del rol debe ser un número positivo.")>
+
+      Public Property RoleID As Integer
+  overload: SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El ID del rol es obligatorio.
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El ID del rol debe ser un número positivo.
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+  commentId: P:SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+  id: NombreCompleto
+  parent: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: NombreCompleto
+  nameWithType: UsuarioCreacionDto.NombreCompleto
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: NombreCompleto
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 11
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "El nombre completo es obligatorio.")]
+
+      [StringLength(200, ErrorMessage = "El nombre completo no puede exceder los 200 caracteres.")]
+
+      public string NombreCompleto { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="El nombre completo es obligatorio.")>
+
+      <StringLength(200, ErrorMessage:="El nombre completo no puede exceder los 200 caracteres.")>
+
+      Public Property NombreCompleto As String
+  overload: SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El nombre completo es obligatorio.
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El nombre completo no puede exceder los 200 caracteres.
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+  commentId: P:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+  id: Email
+  parent: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: UsuarioCreacionDto.Email
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: Email
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 15
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "El correo electrónico es obligatorio.")]
+
+      [EmailAddress(ErrorMessage = "El formato del correo electrónico no es válido.")]
+
+      [StringLength(150, ErrorMessage = "El correo electrónico no puede exceder los 150 caracteres.")]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="El correo electrónico es obligatorio.")>
+
+      <EmailAddress(ErrorMessage:="El formato del correo electrónico no es válido.")>
+
+      <StringLength(150, ErrorMessage:="El correo electrónico no puede exceder los 150 caracteres.")>
+
+      Public Property Email As String
+  overload: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El correo electrónico es obligatorio.
+  - type: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+    ctor: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El formato del correo electrónico no es válido.
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 150
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El correo electrónico no puede exceder los 150 caracteres.
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+  commentId: P:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+  id: Password
+  parent: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: UsuarioCreacionDto.Password
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: Password
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 20
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "La contraseña es obligatoria.")]
+
+      [StringLength(50, MinimumLength = 6, ErrorMessage = "La contraseña debe tener entre 6 y 50 caracteres.")]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="La contraseña es obligatoria.")>
+
+      <StringLength(50, MinimumLength:=6, ErrorMessage:="La contraseña debe tener entre 6 y 50 caracteres.")>
+
+      Public Property Password As String
+  overload: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: La contraseña es obligatoria.
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 50
+    namedArguments:
+    - name: MinimumLength
+      type: System.Int32
+      value: 6
+    - name: ErrorMessage
+      type: System.String
+      value: La contraseña debe tener entre 6 y 50 caracteres.
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+  commentId: P:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+  id: Activo
+  parent: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: Activo
+  nameWithType: UsuarioCreacionDto.Activo
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: Activo
+    path: ../SistemaInventario.Api/DTOs/UsuarioCreacionDto.cs
+    startLine: 24
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: public bool Activo { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Activo As Boolean
+  overload: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo*
+references:
+- uid: SistemaInventario.Api.DTOs
+  commentId: N:SistemaInventario.Api.DTOs
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.DTOs
+  nameWithType: SistemaInventario.Api.DTOs
+  fullName: SistemaInventario.Api.DTOs
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID*
+  commentId: Overload:SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html#SistemaInventario_Api_DTOs_UsuarioCreacionDto_RoleID
+  name: RoleID
+  nameWithType: UsuarioCreacionDto.RoleID
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.RoleID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto*
+  commentId: Overload:SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html#SistemaInventario_Api_DTOs_UsuarioCreacionDto_NombreCompleto
+  name: NombreCompleto
+  nameWithType: UsuarioCreacionDto.NombreCompleto
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.NombreCompleto
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email*
+  commentId: Overload:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html#SistemaInventario_Api_DTOs_UsuarioCreacionDto_Email
+  name: Email
+  nameWithType: UsuarioCreacionDto.Email
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Email
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password*
+  commentId: Overload:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html#SistemaInventario_Api_DTOs_UsuarioCreacionDto_Password
+  name: Password
+  nameWithType: UsuarioCreacionDto.Password
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Password
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo*
+  commentId: Overload:SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html#SistemaInventario_Api_DTOs_UsuarioCreacionDto_Activo
+  name: Activo
+  nameWithType: UsuarioCreacionDto.Activo
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto.Activo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

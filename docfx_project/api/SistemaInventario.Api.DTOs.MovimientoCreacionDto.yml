@@ -1,0 +1,773 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  id: MovimientoCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  children:
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+  langs:
+  - csharp
+  - vb
+  name: MovimientoCreacionDto
+  nameWithType: MovimientoCreacionDto
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  type: Class
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: MovimientoCreacionDto
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 5
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: public class MovimientoCreacionDto
+    content.vb: Public Class MovimientoCreacionDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+  id: ProductoID
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: ProductoID
+  nameWithType: MovimientoCreacionDto.ProductoID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: ProductoID
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 7
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(1, 2147483647, ErrorMessage = "El ProductoID es obligatorio.")]
+
+      public int ProductoID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      <Range(1, 2147483647, ErrorMessage:="El ProductoID es obligatorio.")>
+
+      Public Property ProductoID As Integer
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El ProductoID es obligatorio.
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+  id: UsuarioID
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: UsuarioID
+  nameWithType: MovimientoCreacionDto.UsuarioID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: UsuarioID
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 11
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(1, 2147483647, ErrorMessage = "El UsuarioID es obligatorio.")]
+
+      public int UsuarioID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      <Range(1, 2147483647, ErrorMessage:="El UsuarioID es obligatorio.")>
+
+      Public Property UsuarioID As Integer
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El UsuarioID es obligatorio.
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+  id: ProveedorID
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: ProveedorID
+  nameWithType: MovimientoCreacionDto.ProveedorID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: ProveedorID
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 15
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: public int? ProveedorID { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ProveedorID As Integer?
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID*
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+  id: TipoMovimiento
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: TipoMovimiento
+  nameWithType: MovimientoCreacionDto.TipoMovimiento
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: TipoMovimiento
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 17
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "El tipo de movimiento es obligatorio.")]
+
+      public string TipoMovimiento { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="El tipo de movimiento es obligatorio.")>
+
+      Public Property TipoMovimiento As String
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El tipo de movimiento es obligatorio.
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+  id: Cantidad
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: Cantidad
+  nameWithType: MovimientoCreacionDto.Cantidad
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: Cantidad
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 20
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(1, 2147483647, ErrorMessage = "La cantidad debe ser al menos 1.")]
+
+      public int Cantidad { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      <Range(1, 2147483647, ErrorMessage:="La cantidad debe ser al menos 1.")>
+
+      Public Property Cantidad As Integer
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: La cantidad debe ser al menos 1.
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+  id: CostoUnitario
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: CostoUnitario
+  nameWithType: MovimientoCreacionDto.CostoUnitario
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: CostoUnitario
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 24
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [Range(0.01, 7.922816251426434E+28, ErrorMessage = "El costo unitario debe ser positivo.")]
+
+      public decimal? CostoUnitario { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <Range(0.01, 7.922816251426434E+28, ErrorMessage:="El costo unitario debe ser positivo.")>
+
+      Public Property CostoUnitario As Decimal?
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Double,System.Double)
+    arguments:
+    - type: System.Double
+      value: 0.01
+    - type: System.Double
+      value: 7.922816251426434E+28
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: El costo unitario debe ser positivo.
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia
+  commentId: P:SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia
+  id: Referencia
+  parent: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  langs:
+  - csharp
+  - vb
+  name: Referencia
+  nameWithType: MovimientoCreacionDto.Referencia
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia
+  type: Property
+  source:
+    remote:
+      path: SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+      branch: master
+      repo: https://github.com/FernandoM-99/SistemaInventario.Api.git
+    id: Referencia
+    path: ../SistemaInventario.Api/DTOs/MovimientoCreacionDto.cs
+    startLine: 27
+  assemblies:
+  - SistemaInventario.Api
+  namespace: SistemaInventario.Api.DTOs
+  syntax:
+    content: >-
+      [StringLength(200)]
+
+      public string? Referencia { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <StringLength(200)>
+
+      Public Property Referencia As String
+  overload: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+references:
+- uid: SistemaInventario.Api.DTOs
+  commentId: N:SistemaInventario.Api.DTOs
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.DTOs
+  nameWithType: SistemaInventario.Api.DTOs
+  fullName: SistemaInventario.Api.DTOs
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_ProductoID
+  name: ProductoID
+  nameWithType: MovimientoCreacionDto.ProductoID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProductoID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_UsuarioID
+  name: UsuarioID
+  nameWithType: MovimientoCreacionDto.UsuarioID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.UsuarioID
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_ProveedorID
+  name: ProveedorID
+  nameWithType: MovimientoCreacionDto.ProveedorID
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.ProveedorID
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_TipoMovimiento
+  name: TipoMovimiento
+  nameWithType: MovimientoCreacionDto.TipoMovimiento
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.TipoMovimiento
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_Cantidad
+  name: Cantidad
+  nameWithType: MovimientoCreacionDto.Cantidad
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Cantidad
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_CostoUnitario
+  name: CostoUnitario
+  nameWithType: MovimientoCreacionDto.CostoUnitario
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.CostoUnitario
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal?
+  nameWithType: decimal?
+  fullName: decimal?
+  nameWithType.vb: Decimal?
+  fullName.vb: Decimal?
+  name.vb: Decimal?
+  spec.csharp:
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia*
+  commentId: Overload:SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html#SistemaInventario_Api_DTOs_MovimientoCreacionDto_Referencia
+  name: Referencia
+  nameWithType: MovimientoCreacionDto.Referencia
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto.Referencia

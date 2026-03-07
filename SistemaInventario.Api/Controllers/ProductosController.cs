@@ -1,8 +1,4 @@
 ﻿// Controllers/ProductosController.cs
-/// <summary>
-/// Proporciona servicios para la gestión del catálogo de productos.
-/// Incluye operaciones para la creación, consulta, actualización y eliminación de artículos e inventario.
-/// </summary>
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
@@ -11,6 +7,10 @@ using SistemaInventario.Api.Models;
 
 namespace SistemaInventario.Api.Controllers
 {
+    /// <summary>
+    /// Proporciona servicios para la gestión del catálogo de productos.
+    /// Incluye operaciones para la creación, consulta, actualización y eliminación de artículos e inventario.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ProductosController : ControllerBase

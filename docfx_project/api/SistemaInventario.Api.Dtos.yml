@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.Dtos
+  commentId: N:SistemaInventario.Api.Dtos
+  id: SistemaInventario.Api.Dtos
+  children:
+  - SistemaInventario.Api.Dtos.AuthResponseDto
+  - SistemaInventario.Api.Dtos.LoginDto
+  langs:
+  - csharp
+  - vb
+  name: SistemaInventario.Api.Dtos
+  nameWithType: SistemaInventario.Api.Dtos
+  fullName: SistemaInventario.Api.Dtos
+  type: Namespace
+  assemblies:
+  - SistemaInventario.Api
+references:
+- uid: SistemaInventario.Api.Dtos.AuthResponseDto
+  commentId: T:SistemaInventario.Api.Dtos.AuthResponseDto
+  href: SistemaInventario.Api.Dtos.AuthResponseDto.html
+  name: AuthResponseDto
+  nameWithType: AuthResponseDto
+  fullName: SistemaInventario.Api.Dtos.AuthResponseDto
+- uid: SistemaInventario.Api.Dtos.LoginDto
+  commentId: T:SistemaInventario.Api.Dtos.LoginDto
+  parent: SistemaInventario.Api.Dtos
+  href: SistemaInventario.Api.Dtos.LoginDto.html
+  name: LoginDto
+  nameWithType: LoginDto
+  fullName: SistemaInventario.Api.Dtos.LoginDto
+- uid: SistemaInventario.Api.Dtos
+  commentId: N:SistemaInventario.Api.Dtos
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.Dtos
+  nameWithType: SistemaInventario.Api.Dtos
+  fullName: SistemaInventario.Api.Dtos
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Dtos
+    name: Dtos
+    href: SistemaInventario.Api.Dtos.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Dtos
+    name: Dtos
+    href: SistemaInventario.Api.Dtos.html

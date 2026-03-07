@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.Models
+  commentId: N:SistemaInventario.Api.Models
+  id: SistemaInventario.Api.Models
+  children:
+  - SistemaInventario.Api.Models.MovimientoInventario
+  - SistemaInventario.Api.Models.Producto
+  - SistemaInventario.Api.Models.ProductoProveedor
+  - SistemaInventario.Api.Models.Proveedor
+  - SistemaInventario.Api.Models.Rol
+  - SistemaInventario.Api.Models.Usuario
+  langs:
+  - csharp
+  - vb
+  name: SistemaInventario.Api.Models
+  nameWithType: SistemaInventario.Api.Models
+  fullName: SistemaInventario.Api.Models
+  type: Namespace
+  assemblies:
+  - SistemaInventario.Api
+references:
+- uid: SistemaInventario.Api.Models.MovimientoInventario
+  commentId: T:SistemaInventario.Api.Models.MovimientoInventario
+  href: SistemaInventario.Api.Models.MovimientoInventario.html
+  name: MovimientoInventario
+  nameWithType: MovimientoInventario
+  fullName: SistemaInventario.Api.Models.MovimientoInventario
+- uid: SistemaInventario.Api.Models.Producto
+  commentId: T:SistemaInventario.Api.Models.Producto
+  parent: SistemaInventario.Api.Models
+  href: SistemaInventario.Api.Models.Producto.html
+  name: Producto
+  nameWithType: Producto
+  fullName: SistemaInventario.Api.Models.Producto
+- uid: SistemaInventario.Api.Models.ProductoProveedor
+  commentId: T:SistemaInventario.Api.Models.ProductoProveedor
+  href: SistemaInventario.Api.Models.ProductoProveedor.html
+  name: ProductoProveedor
+  nameWithType: ProductoProveedor
+  fullName: SistemaInventario.Api.Models.ProductoProveedor
+- uid: SistemaInventario.Api.Models.Proveedor
+  commentId: T:SistemaInventario.Api.Models.Proveedor
+  parent: SistemaInventario.Api.Models
+  href: SistemaInventario.Api.Models.Proveedor.html
+  name: Proveedor
+  nameWithType: Proveedor
+  fullName: SistemaInventario.Api.Models.Proveedor
+- uid: SistemaInventario.Api.Models.Rol
+  commentId: T:SistemaInventario.Api.Models.Rol
+  parent: SistemaInventario.Api.Models
+  href: SistemaInventario.Api.Models.Rol.html
+  name: Rol
+  nameWithType: Rol
+  fullName: SistemaInventario.Api.Models.Rol
+- uid: SistemaInventario.Api.Models.Usuario
+  commentId: T:SistemaInventario.Api.Models.Usuario
+  parent: SistemaInventario.Api.Models
+  href: SistemaInventario.Api.Models.Usuario.html
+  name: Usuario
+  nameWithType: Usuario
+  fullName: SistemaInventario.Api.Models.Usuario
+- uid: SistemaInventario.Api.Models
+  commentId: N:SistemaInventario.Api.Models
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.Models
+  nameWithType: SistemaInventario.Api.Models
+  fullName: SistemaInventario.Api.Models
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Models
+    name: Models
+    href: SistemaInventario.Api.Models.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Models
+    name: Models
+    href: SistemaInventario.Api.Models.html

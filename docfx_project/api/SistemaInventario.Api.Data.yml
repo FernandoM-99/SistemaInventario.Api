@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.Data
+  commentId: N:SistemaInventario.Api.Data
+  id: SistemaInventario.Api.Data
+  children:
+  - SistemaInventario.Api.Data.ApplicationDbContext
+  langs:
+  - csharp
+  - vb
+  name: SistemaInventario.Api.Data
+  nameWithType: SistemaInventario.Api.Data
+  fullName: SistemaInventario.Api.Data
+  type: Namespace
+  assemblies:
+  - SistemaInventario.Api
+references:
+- uid: SistemaInventario.Api.Data.ApplicationDbContext
+  commentId: T:SistemaInventario.Api.Data.ApplicationDbContext
+  parent: SistemaInventario.Api.Data
+  href: SistemaInventario.Api.Data.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: SistemaInventario.Api.Data.ApplicationDbContext
+- uid: SistemaInventario.Api.Data
+  commentId: N:SistemaInventario.Api.Data
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.Data
+  nameWithType: SistemaInventario.Api.Data
+  fullName: SistemaInventario.Api.Data
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Data
+    name: Data
+    href: SistemaInventario.Api.Data.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.Data
+    name: Data
+    href: SistemaInventario.Api.Data.html

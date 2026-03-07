@@ -3,6 +3,425 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.AuthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.AuthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.AuthController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.MovimientosInventarioController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.MovimientosInventarioController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.MovimientosInventarioController",
+      "Summary": "<p sourcefile=\"api/SistemaInventario.Api.Controllers.MovimientosInventarioController.yml\" sourcestartlinenumber=\"1\">Obtiene el historial completo de movimientos de inventario (Entradas/Salidas).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.ProductosController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.ProductosController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.ProductosController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.ProveedoresController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.ProveedoresController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.ProveedoresController",
+      "Summary": "<p sourcefile=\"api/SistemaInventario.Api.Controllers.ProveedoresController.yml\" sourcestartlinenumber=\"1\">Módulo encargado de la gestión de la base de datos de proveedores.\nAlmacena información de contacto y relaciones comerciales con las entidades de suministro.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.RolesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.RolesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.RolesController",
+      "Summary": "<p sourcefile=\"api/SistemaInventario.Api.Controllers.RolesController.yml\" sourcestartlinenumber=\"1\">Gestiona la administración de  Roles del sistema.\nPermite el control de roles (Creacion y Modificacion).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.UsuariosController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.UsuariosController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers.UsuariosController",
+      "Summary": "<p sourcefile=\"api/SistemaInventario.Api.Controllers.UsuariosController.yml\" sourcestartlinenumber=\"1\">Gestiona la administración de cuentas de usuario del sistema.\nPermite el control de perfiles, asignación de roles y estado de activación de los empleados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.MovimientoCreacionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.MovimientoCreacionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.MovimientoCreacionDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.MovimientoInventarioDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.MovimientoInventarioDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.MovimientoInventarioDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.ProductoCreacionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.ProductoCreacionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.ProductoCreacionDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.ProductoDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.ProductoDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.ProductoDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.ProveedorCreacionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.ProveedorCreacionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.ProveedorCreacionDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.ProveedorDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.ProveedorDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.ProveedorDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.UsuarioCreacionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.UsuarioCreacionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.UsuarioCreacionDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.UsuarioDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.UsuarioDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.UsuarioDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs.UsuarioEdicionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs.UsuarioEdicionDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs.UsuarioEdicionDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.DTOs_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.DTOs_1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.DTOs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Data.ApplicationDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Data.ApplicationDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Data.ApplicationDbContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Dtos.AuthResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Dtos.AuthResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Dtos.AuthResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Dtos.LoginDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Dtos.LoginDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Dtos.LoginDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Dtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Dtos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Dtos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.MovimientoInventario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.MovimientoInventario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.MovimientoInventario",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.Producto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.Producto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.Producto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.ProductoProveedor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.ProductoProveedor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.ProductoProveedor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.Proveedor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.Proveedor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.Proveedor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.Rol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.Rol.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.Rol",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.Usuario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.Usuario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models.Usuario",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaInventario.Api.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaInventario.Api.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaInventario.Api.Models",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/frontend/App/README.md",
       "output": {
@@ -118,6 +537,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/frontend/components/Sidebar/functions/default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/frontend/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/frontend/index.html"
         }
       },
       "version": ""

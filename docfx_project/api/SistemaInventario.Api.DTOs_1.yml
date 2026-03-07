@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.DTOs
+  commentId: N:SistemaInventario.Api.DTOs
+  id: SistemaInventario.Api.DTOs
+  children:
+  - SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  - SistemaInventario.Api.DTOs.MovimientoInventarioDto
+  - SistemaInventario.Api.DTOs.ProductoCreacionDto
+  - SistemaInventario.Api.DTOs.ProductoDto
+  - SistemaInventario.Api.DTOs.ProveedorCreacionDto
+  - SistemaInventario.Api.DTOs.ProveedorDto
+  - SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  - SistemaInventario.Api.DTOs.UsuarioDto
+  - SistemaInventario.Api.DTOs.UsuarioEdicionDto
+  langs:
+  - csharp
+  - vb
+  name: SistemaInventario.Api.DTOs
+  nameWithType: SistemaInventario.Api.DTOs
+  fullName: SistemaInventario.Api.DTOs
+  type: Namespace
+  assemblies:
+  - SistemaInventario.Api
+references:
+- uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.MovimientoCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  href: SistemaInventario.Api.DTOs.MovimientoCreacionDto.html
+  name: MovimientoCreacionDto
+  nameWithType: MovimientoCreacionDto
+  fullName: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+- uid: SistemaInventario.Api.DTOs.MovimientoInventarioDto
+  commentId: T:SistemaInventario.Api.DTOs.MovimientoInventarioDto
+  href: SistemaInventario.Api.DTOs.MovimientoInventarioDto.html
+  name: MovimientoInventarioDto
+  nameWithType: MovimientoInventarioDto
+  fullName: SistemaInventario.Api.DTOs.MovimientoInventarioDto
+- uid: SistemaInventario.Api.DTOs.ProductoCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.ProductoCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  href: SistemaInventario.Api.DTOs.ProductoCreacionDto.html
+  name: ProductoCreacionDto
+  nameWithType: ProductoCreacionDto
+  fullName: SistemaInventario.Api.DTOs.ProductoCreacionDto
+- uid: SistemaInventario.Api.DTOs.ProductoDto
+  commentId: T:SistemaInventario.Api.DTOs.ProductoDto
+  href: SistemaInventario.Api.DTOs.ProductoDto.html
+  name: ProductoDto
+  nameWithType: ProductoDto
+  fullName: SistemaInventario.Api.DTOs.ProductoDto
+- uid: SistemaInventario.Api.DTOs.ProveedorCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.ProveedorCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  href: SistemaInventario.Api.DTOs.ProveedorCreacionDto.html
+  name: ProveedorCreacionDto
+  nameWithType: ProveedorCreacionDto
+  fullName: SistemaInventario.Api.DTOs.ProveedorCreacionDto
+- uid: SistemaInventario.Api.DTOs.ProveedorDto
+  commentId: T:SistemaInventario.Api.DTOs.ProveedorDto
+  href: SistemaInventario.Api.DTOs.ProveedorDto.html
+  name: ProveedorDto
+  nameWithType: ProveedorDto
+  fullName: SistemaInventario.Api.DTOs.ProveedorDto
+- uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  commentId: T:SistemaInventario.Api.DTOs.UsuarioCreacionDto
+  parent: SistemaInventario.Api.DTOs
+  href: SistemaInventario.Api.DTOs.UsuarioCreacionDto.html
+  name: UsuarioCreacionDto
+  nameWithType: UsuarioCreacionDto
+  fullName: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+- uid: SistemaInventario.Api.DTOs.UsuarioDto
+  commentId: T:SistemaInventario.Api.DTOs.UsuarioDto
+  href: SistemaInventario.Api.DTOs.UsuarioDto.html
+  name: UsuarioDto
+  nameWithType: UsuarioDto
+  fullName: SistemaInventario.Api.DTOs.UsuarioDto
+- uid: SistemaInventario.Api.DTOs.UsuarioEdicionDto
+  commentId: T:SistemaInventario.Api.DTOs.UsuarioEdicionDto
+  parent: SistemaInventario.Api.DTOs
+  href: SistemaInventario.Api.DTOs.UsuarioEdicionDto.html
+  name: UsuarioEdicionDto
+  nameWithType: UsuarioEdicionDto
+  fullName: SistemaInventario.Api.DTOs.UsuarioEdicionDto
+- uid: SistemaInventario.Api.DTOs
+  commentId: N:SistemaInventario.Api.DTOs
+  href: SistemaInventario.html
+  name: SistemaInventario.Api.DTOs
+  nameWithType: SistemaInventario.Api.DTOs
+  fullName: SistemaInventario.Api.DTOs
+  spec.csharp:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html
+  spec.vb:
+  - uid: SistemaInventario
+    name: SistemaInventario
+    href: SistemaInventario.html
+  - name: .
+  - uid: SistemaInventario.Api
+    name: Api
+    href: SistemaInventario.Api.html
+  - name: .
+  - uid: SistemaInventario.Api.DTOs
+    name: DTOs
+    href: SistemaInventario.Api.DTOs.html

@@ -1,0 +1,95 @@
+### YamlMime:TableOfContent
+items:
+- uid: SistemaInventario.Api.Controllers
+  name: SistemaInventario.Api.Controllers
+  type: Namespace
+  items:
+  - uid: SistemaInventario.Api.Controllers.AuthController
+    name: AuthController
+    type: Class
+  - uid: SistemaInventario.Api.Controllers.MovimientosInventarioController
+    name: MovimientosInventarioController
+    type: Class
+  - uid: SistemaInventario.Api.Controllers.ProductosController
+    name: ProductosController
+    type: Class
+  - uid: SistemaInventario.Api.Controllers.ProveedoresController
+    name: ProveedoresController
+    type: Class
+  - uid: SistemaInventario.Api.Controllers.RolesController
+    name: RolesController
+    type: Class
+  - uid: SistemaInventario.Api.Controllers.UsuariosController
+    name: UsuariosController
+    type: Class
+- uid: SistemaInventario.Api.DTOs
+  name: SistemaInventario.Api.DTOs
+  type: Namespace
+  items:
+  - uid: SistemaInventario.Api.DTOs.MovimientoCreacionDto
+    name: MovimientoCreacionDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.MovimientoInventarioDto
+    name: MovimientoInventarioDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.ProductoCreacionDto
+    name: ProductoCreacionDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.ProductoDto
+    name: ProductoDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.ProveedorCreacionDto
+    name: ProveedorCreacionDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.ProveedorDto
+    name: ProveedorDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.UsuarioCreacionDto
+    name: UsuarioCreacionDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.UsuarioDto
+    name: UsuarioDto
+    type: Class
+  - uid: SistemaInventario.Api.DTOs.UsuarioEdicionDto
+    name: UsuarioEdicionDto
+    type: Class
+- uid: SistemaInventario.Api.Data
+  name: SistemaInventario.Api.Data
+  type: Namespace
+  items:
+  - uid: SistemaInventario.Api.Data.ApplicationDbContext
+    name: ApplicationDbContext
+    type: Class
+- uid: SistemaInventario.Api.Dtos
+  name: SistemaInventario.Api.Dtos
+  type: Namespace
+  items:
+  - uid: SistemaInventario.Api.Dtos.AuthResponseDto
+    name: AuthResponseDto
+    type: Class
+  - uid: SistemaInventario.Api.Dtos.LoginDto
+    name: LoginDto
+    type: Class
+- uid: SistemaInventario.Api.Models
+  name: SistemaInventario.Api.Models
+  type: Namespace
+  items:
+  - uid: SistemaInventario.Api.Models.MovimientoInventario
+    name: MovimientoInventario
+    type: Class
+  - uid: SistemaInventario.Api.Models.Producto
+    name: Producto
+    type: Class
+  - uid: SistemaInventario.Api.Models.ProductoProveedor
+    name: ProductoProveedor
+    type: Class
+  - uid: SistemaInventario.Api.Models.Proveedor
+    name: Proveedor
+    type: Class
+  - uid: SistemaInventario.Api.Models.Rol
+    name: Rol
+    type: Class
+  - uid: SistemaInventario.Api.Models.Usuario
+    name: Usuario
+    type: Class
+memberLayout: SamePage

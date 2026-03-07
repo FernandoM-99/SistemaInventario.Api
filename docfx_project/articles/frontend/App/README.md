@@ -1,8 +1,8 @@
-[**KeyStock Frontend v0.1.0**](../README.md)
+[**sistema-inventario-frontend v0.1.0**](../README.md)
 
 ***
 
-[KeyStock Frontend](../modules.md) / App
+[sistema-inventario-frontend](../modules.md) / App
 
 # App
 

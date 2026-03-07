@@ -1,8 +1,8 @@
-[**KeyStock Frontend v0.1.0**](../../../README.md)
+[**sistema-inventario-frontend v0.1.0**](../../../README.md)
 
 ***
 
-[KeyStock Frontend](../../../modules.md) / [components/ProtectedRoute](../README.md) / default
+[sistema-inventario-frontend](../../../modules.md) / [components/ProtectedRoute](../README.md) / default
 
 # Function: default()
 

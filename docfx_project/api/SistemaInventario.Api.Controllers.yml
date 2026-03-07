@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaInventario.Api.Controllers
+  commentId: N:SistemaInventario.Api.Controllers
+  id: SistemaInventario.Api.Controllers
+  children:
+  - SistemaInventario.Api.Controllers.AuthController
+  - SistemaInventario.Api.Controllers.MovimientosInventarioController
+  - SistemaInventario.Api.Controllers.ProductosController
+  - SistemaInventario.Api.Controllers.ProveedoresController
+  - SistemaInventario.Api.Controllers.RolesController
+  - SistemaInventario.Api.Controllers.UsuariosController
+  langs:
+  - csharp
+  - vb
+  name: SistemaInventario.Api.Controllers
+  nameWithType: SistemaInventario.Api.Controllers
+  fullName: SistemaInventario.Api.Controllers
+  type: Namespace
+  assemblies:
+  - SistemaInventario.Api
+references:
+- uid: SistemaInventario.Api.Controllers.AuthController
+  commentId: T:SistemaInventario.Api.Controllers.AuthController
+  href: SistemaInventario.Api.Controllers.AuthController.html
+  name: AuthController
+  nameWithType: AuthController
+  fullName: SistemaInventario.Api.Controllers.AuthController
+- uid: SistemaInventario.Api.Controllers.MovimientosInventarioController
+  commentId: T:SistemaInventario.Api.Controllers.MovimientosInventarioController
+  href: SistemaInventario.Api.Controllers.MovimientosInventarioController.html
+  name: MovimientosInventarioController
+  nameWithType: MovimientosInventarioController
+  fullName: SistemaInventario.Api.Controllers.MovimientosInventarioController
+- uid: SistemaInventario.Api.Controllers.ProductosController
+  commentId: T:SistemaInventario.Api.Controllers.ProductosController
+  href: SistemaInventario.Api.Controllers.ProductosController.html
+  name: ProductosController
+  nameWithType: ProductosController
+  fullName: SistemaInventario.Api.Controllers.ProductosController
+- uid: SistemaInventario.Api.Controllers.ProveedoresController
+  commentId: T:SistemaInventario.Api.Controllers.ProveedoresController
+  href: SistemaInventario.Api.Controllers.ProveedoresController.html
+  name: ProveedoresController
+  nameWithType: ProveedoresController
+  fullName: SistemaInventario.Api.Controllers.ProveedoresController
+- uid: SistemaInventario.Api.Controllers.RolesController
+  commentId: T:SistemaInventario.Api.Controllers.RolesController
+  href: SistemaInventario.Api.Controllers.RolesController.html
+  name: RolesController
+  nameWithType: RolesController
+  fullName: SistemaInventario.Api.Controllers.RolesController
+- uid: SistemaInventario.Api.Controllers.UsuariosController
+  commentId: T:SistemaInventario.Api.Controllers.UsuariosController
+  href: SistemaInventario.Api.Controllers.UsuariosController.html
+  name: UsuariosController
+  nameWithType: UsuariosController
+  fullName: SistemaInventario.Api.Controllers.UsuariosController

@@ -110,4 +110,4 @@ Este proyecto está bajo la Licencia MIT.
 
 ---
 
-**Desarrollado por Fernando Molinares, Andrea Arce, Isaac Pacheco**
+**Desarrollado por Fernando Molinares, Andrea Arce**

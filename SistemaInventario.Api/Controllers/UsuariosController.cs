@@ -49,11 +49,11 @@ namespace SistemaInventario.Api.Controllers
 
         // GET: api/Usuarios/1
         /// <summary>
-        /// Elimina permanentemente un usuario del sistema.
+        /// Obtiene la información detallada de un usuario específico por su ID.
         /// </summary>
-        /// <param name="id">ID del usuario a eliminar.</param>
-        /// <response code="204">Usuario eliminado exitosamente.</response>
-        /// <response code="404">El usuario no existe.</response>
+        /// <param name="id">ID del usuario.</param>
+        /// <response code="200">Usuario encontrado.</response>
+        /// <response code="404">Usuario no encontrado.</response>
         [HttpGet("{id}")]
         public async Task<ActionResult<UsuarioDto>> GetUsuario(int id)
         {
@@ -190,11 +190,11 @@ namespace SistemaInventario.Api.Controllers
 
         // DELETE: api/Usuarios/5
         /// <summary>
-        /// Obtiene la información detallada de un usuario específico por su ID.
+        /// Elimina permanentemente un usuario del sistema.
         /// </summary>
-        /// <param name="id">ID del usuario.</param>
-        /// <response code="200">Usuario encontrado.</response>
-        /// <response code="404">Usuario no encontrado.</response>
+        /// <param name="id">ID del usuario a eliminar.</param>
+        /// <response code="204">Usuario eliminado exitosamente.</response>
+        /// <response code="404">El usuario no existe.</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {

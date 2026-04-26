@@ -30,6 +30,11 @@ items:
   assemblies:
   - SistemaInventario.Api
   namespace: SistemaInventario.Api.Controllers
+  summary: >-
+    Proporciona servicios para la gestión del catálogo de productos.
+
+    Incluye operaciones para la creación, consulta, actualización y eliminación de artículos e inventario.
+  example: []
   syntax:
     content: >-
       [Route("api/[controller]")]

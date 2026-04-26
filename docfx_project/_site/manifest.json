@@ -42,7 +42,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SistemaInventario.Api.Controllers.ProductosController",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/SistemaInventario.Api.Controllers.ProductosController.yml\" sourcestartlinenumber=\"1\">Proporciona servicios para la gestión del catálogo de productos.\nIncluye operaciones para la creación, consulta, actualización y eliminación de artículos e inventario.</p>\n"
     },
     {
       "type": "ManagedReference",

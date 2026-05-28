@@ -1,5 +1,4 @@
-﻿// Controllers/ProductosController.cs
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
 using SistemaInventario.Api.DTOs; // Importar DTOs

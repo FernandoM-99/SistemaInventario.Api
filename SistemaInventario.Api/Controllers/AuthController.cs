@@ -1,8 +1,4 @@
-﻿/// <summary>
-/// Gestiona los procesos de autenticación y acceso al sistema.
-/// Permite el inicio de sesión de usuarios mediante la validación de credenciales hasheadas.
-/// </summary>
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.Api.Data;
 using SistemaInventario.Api.Dtos;
@@ -11,6 +7,10 @@ namespace SistemaInventario.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    /// <summary>
+    /// Gestiona los procesos de autenticación y acceso al sistema.
+    /// Permite el inicio de sesión de usuarios mediante la validación de credenciales hasheadas.
+    /// </summary>
     public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

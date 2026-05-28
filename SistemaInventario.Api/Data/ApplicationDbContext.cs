@@ -12,14 +12,14 @@ namespace SistemaInventario.Api.Data
         }
 
         // --- AÑADIR TODOS LOS DbSet ---
-        public DbSet<Producto> Productos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Rol> Roles { get; set; }
-        public DbSet<Proveedor> Proveedores { get; set; }
+        // Dentro de tu ApplicationDbContext.cs
 
-        // --- LOS DbSet FALTANTES QUE CAUSARON LOS ERRORES ---
-        public DbSet<ProductoProveedor> ProductosProveedores { get; set; }
-        public DbSet<MovimientoInventario> MovimientosInventario { get; set; }
+        public virtual DbSet<Producto> Productos { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<Rol> Roles { get; set; }
+        public virtual DbSet<Proveedor> Proveedores { get; set; }
+        public virtual DbSet<ProductoProveedor> ProductosProveedores { get; set; }
+        public virtual DbSet<MovimientoInventario> MovimientosInventario { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
